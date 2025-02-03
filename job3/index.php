@@ -5,13 +5,13 @@ class Personne
     public string $nom;
     public string $prenom;
 
-    public function __construct(?string $nom = "", ?string $prenom = "")
+    function __construct(?string $nom = "", ?string $prenom = "")
     {
         $this->nom = $nom;
         $this->prenom = $prenom;
     }
 
-    public function SePresenter(): string
+    function SePresenter(): string
     {
         $resultat = "Je suis $this->prenom $this->nom";
         return $resultat;
