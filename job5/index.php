@@ -8,7 +8,7 @@ class Animal
     public function __construct(?string $age = "0", ?string $prenom = "")
     {
         $this->age = $age;
-        $this->nom = $prenom;
+        $this->prenom = $prenom;
     }
 
     public function vieillir(): string
