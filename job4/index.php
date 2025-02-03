@@ -38,19 +38,19 @@ class Point {
 }
 
 // Instanciation de la classe Point avec des valeurs pour x et y
-$point1 = new Point(5, 10);
+$point1 = new Point(8, 18);
 
 // Affichage des informations du point
-$point1->afficherLesPoints();  // Affiche (5, 10)
-$point1->afficherX();          // Affiche x = 5
-$point1->afficherY();          // Affiche y = 10
+$point1->afficherLesPoints();  // Affiche (8, 18)
+$point1->afficherX();          // Affiche x = 8
+$point1->afficherY();          // Affiche y = 18
 
 // Changer les coordonnées du point
-$point1->changerX(15);
-$point1->changerY(20);
+$point1->changerX(12);
+$point1->changerY(32);
 
 // Affichage après modification des coordonnées
-$point1->afficherLesPoints();  // Affiche (15, 20)
+$point1->afficherLesPoints();  // Affiche (12, 32)
 $point1->afficherX();          // Affiche x = 15
 $point1->afficherY();          // Affiche y = 20
 
