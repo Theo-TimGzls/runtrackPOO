@@ -6,33 +6,33 @@ class Point {
     public $y;
 
     // Constructeur pour initialiser x et y
-    public function __construct($x, $y) {
+    function __construct($x, $y) {
         $this->x = $x;
         $this->y = $y;
     }
 
     // Méthode pour afficher les coordonnées du point
-    public function afficherLesPoints() {
+    function afficherLesPoints() {
         echo "Point : (" . $this->x . ", " . $this->y . ")<br>";
     }
 
     // Méthode pour afficher la coordonnée x
-    public function afficherX() {
+    function afficherX() {
         echo "x = " . $this->x . "<br>";
     }
 
     // Méthode pour afficher la coordonnée y
-    public function afficherY() {
+    function afficherY() {
         echo "y = " . $this->y . "<br>";
     }
 
     // Méthode pour changer la coordonnée x
-    public function changerX($nouveauX) {
+    function changerX($nouveauX) {
         $this->x = $nouveauX;
     }
 
     // Méthode pour changer la coordonnée y
-    public function changerY($nouveauY) {
+    function changerY($nouveauY) {
         $this->y = $nouveauY;
     }
 }
