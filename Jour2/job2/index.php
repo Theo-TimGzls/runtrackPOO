@@ -46,6 +46,12 @@ class Livre
     {
         if (!empty($nombreDePages) AND is_int($nombreDePages)) {
             $this->nombreDePages = $nombreDePages;
+
+            if ($nombreDePages > 0) {
+                $this->nombreDePages = $nombreDePages;
+            } else {
+                echo "Erreur : Le nombre de pages doit être un entier positif.<br>";
+            }
         }
     }
 }
@@ -54,6 +60,7 @@ $Livre1 = new Livre();
 $Livre1->setTitre("Barbatruc");
 $Livre1->setAuteur("Barbapapa");
 $Livre1->setNombreDePages(56);
+$Livre1->setNombreDePages(-50); // Valeur incorrecte, message d'erreur
 
 echo "Le titre: " . $Livre1->getTitre() . "<br>";
 echo "L'auteur: " . $Livre1->getAuteur() . "<br>";
